@@ -3,45 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Glossy Girls | Product</title>
 </head>
 <body>
-    <header >
-        <h1>Glossy Girls</h1>
-    </header>
-    <nav>
-        <div class="hero">
-            <ul class="lista">
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="FAQ.html">Preguntas mas frecuentes</a></li>
-                <li><a href="productos.html">productos</li></a>
-                <li><a href="compra.html">¿como compro?</a></li>
-                <li><a href="regustrarse.html"><li>registrarse</a></li>
-            </ul>
-            <input class= "buscar" type="text" name="buscar" id="buscar" placeholder="buscar">   
+    <header>
+        <div class="container-hero">
+           <div class="container hero">
+              <div class="container-logo">
+                  <h1>Glossy Girls</h1>
+              </div>
+  
+                <div class="container-users">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                    <a href="./paginas/regustrarse.html"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                    </a>
+                </div>
+           </div>
         </div>
-    </nav>
+    </header>
+  
+      <div class="nav hero">
+        <button class="open-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+          <nav class="navbar">
+              <ul class="lista">
+                  <li><a href="../index.html">inicio</a></li>
+                  <li><a href="faq.html">Preguntas frecuentes</a></li>
+                  <li><a href="productos.html">productos</li></a>
+                  <li><a href="regustrarse.html"><li>registrarse</a></li>
+                  <li><a href="contacto.html">contacto</a></li>
+              </ul>
+          </nav>  
+  
+            <div class="search">
+               <input class= "buscar" type="text" name="buscar" id="buscar" placeholder="buscar">   
+               <button type="submit" class="searchButton">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
+            </div>
+      </div>
+      
+      <div class="collage-media-page">
+        <img src="/collage.png" alt="">
+    </div>
 
     <main>
         <div class="productos">
-            <div class="elegir_producto">
-                <h5>maquillajes disponibles: </h5>
-                <label for="">sombras<input type="checkbox"></label><br>
-                <label for="">rubores <input type="checkbox"></label><br>
-                <label for="">labiales<input type="checkbox"></label><br>
-                <label for="">mascaras de pestañas<input type="checkbox"></label><br>
-                <label for="">bases<input type="checkbox"></label><br>
-                <label for="">delineadores<input type="checkbox"></label><br>
+            <div class="filter">
+                <label for="product">Productos</label>
+                <select name="" id="product">
+                    <option value="">Todos los productos</option>
+                    <optgroup label="maquillajes">
+                        <option value="">Sombras</option>
+                        <option value="">Rubores</option>
+                        <option value="">Labiales</option>
+                        <option value="">Brochas</option>
+                        <option value="">Correctores</option>
+                        <option value="">Base</option>
+                    </optgroup>
+                    <optgroup label="accesorios">
+                        <option value="">Porta brochas</option>
+                        <option value="">Organizador de maquillage</option>
+                        <option value="">Porta brochas</option>
+                    </optgroup>
+                    <optgroup label="Skincare">
+                        <option value="">Serum</option>
+                        <option value="">Mascarillas faciales</option>
+                    </optgroup>
+                </select>
+            </div>  
+
+                    <div class="shop-conteiner">
+                        <div class="box-content">
+                            <img class="sombras" src="../img/brochas.jpg" alt="sombras">
+                            <h4>Set de brochas</h4>
+                            <p> $7.500</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
+
+                        <div class="box-content">
+                            <img class="sombras" src="../img/sombras.jpg" alt="sombras">
+                            <h4>Paleta de sombras addict pink 21</h4>
+                            <p> $10.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
+
+                        <div class="box-content">
+                            <img class="sombras" src="../img/labiales.jpg" alt="sombras">
+                            <h4> Labial SUPERSTAY MATTE</h4>
+                            <p> $9.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
+
                 
-                <h5>accesorios:</h5>
+                        <div class="box-content">
+                            <img class="sombras" src="../img/sombras2.jpg" alt="sombras2">
+                            <h4>Paleta de sombras SELFIIE FACE MY REEL</h4>
+                            <p> $15.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
+                        
+                        <div class="box-content">
+                            <img class="sombras" src="../img/labiales-tinta.jpg" alt="sombras2">
+                            <h4>Tinta de labios Velvet</h4>
+                            <p> $8.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
 
-                <div class="img_productos">
+                        <div class="box-content">
+                            <img class="sombras" src="../img/mascarillafacial.jpg" alt="sombras2">
+                            <h4>Mascarilla facial Zealsea</h4>
+                            <p> $2.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
+                        
+                        <div class="box-content">
+                            <img class="sombras" src="../img/sombras5.jfif" alt="sombras3">
+                            <h4>Sombras en crema Dappop</h4>
+                            <p> $15.000</p>
+                            <button type="button" class="comprar">
+                                Agregar 
+                            </button>
+                         </div>
+                        
+                        <div class="box-content">
+                            <img class="sombras" src="../img/pestañas.jpg" alt="sombras2">
+                            <h4>Mascara de pestañas Melu</h4>
+                            <p> $4.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
 
-                </div>
-            </div>
+
+                        <div class="box-content">
+                            <img class="sombras" src="../img/correctores1.jpeg" alt="sombras4">
+                            <h4>Corrector Glowee</h4>
+                            <p> $3.000</p>
+                            <button type="button" class="comprar">
+                                Agregar 
+                            </button>
+                        </div>
+
+                        <div class="box-content">
+                            <img class="sombras" src="../img/labilaes-gloss.jpg" alt="sombras2">
+                            <h4>Labial gloss hidratante</h4>
+                            <p> $1.500</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
+
+
+                        <div class="box-content">
+                                <img class="sombras" src="../img/sombras4.jpeg" alt="sombras4">
+                                <h4>paleta de sombras Colores Xúlu Z484</h4>
+                                <p> $17.000</p>
+                                <button type="button" class="comprar">
+                                    Agregar 
+                                </button>
+                        </div>
+
+                        <div class="box-content">
+                            <img class="sombras" src="../img/organizador.jpg" alt="sombras">
+                            <h4>Organizador de brochas</h4>
+                            <p> $7.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>    
+
+                        <div class="box-content">
+                                <img class="sombras" src="../img/sombras3.jpg"  alt="sombras5">
+                                <h4>Paleta de sombras Magical chocolate</h4>
+                                <p> $5.000</p>
+                                <button type="button" class="comprar">
+                                    Agregar 
+                                </button>
+                        </div>
+
+                        <div class="box-content">
+                            <img class="sombras" src="../img/labiales2.jpg" alt="sombras2">
+                            <h4>Labial liquido Miss Lara</h4>
+                            <p> $5.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
+                        
+                        <div class="box-content">
+                            <img class="sombras" src="../img/serum.jpeg" alt="sombras2">
+                            <h4>Serum hidranate Melu-Ruby rose</h4>
+                            <p> $13.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
+
+
+
+                        <div class="box-content">
+                            <img class="sombras" src="../img/corrector2.jpg" alt="sombras2">
+                            <h4>Corrector by Melu</h4>
+                            <p> $3.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
+                        
+                        <div class="box-content">
+                            <img class="sombras" src="../img/mascarrilla2.jpg" alt="sombras2">
+                            <h4>Mascarrilla facial Mely</h4>
+                            <p> $1.000</p>
+                            <button type="button" class="comprar">
+                                Agregar
+                            </button>
+                        </div>
+                        
+                    </div>
         </div>
-    </main>
+
+ </main>
 
     <footer class="nosotros">
         <h4>conocenos y contactanos en nustras redes</h4>
