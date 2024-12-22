@@ -1,0 +1,74 @@
+footer{
+    background-color:  #f8f8f8;
+    color: black;
+    font-family: "Roboto";
+    .nosotros{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        h4{
+            margin-left:30px;
+            font-size: 20px;
+        }
+        .contactanos{ 
+            img{
+                float: left;
+                height: 40px;
+                width: 40px;
+                margin: 20px;
+            
+            }
+        }
+    }    
+    .medio-Pago{
+        h5{
+            margin-left:30px;
+            font-size: 20px;
+        }
+        .medioPago{
+            margin-left: 25px;
+            svg{
+                margin: 10px;
+                height: 20px;
+                width: 20px;
+            }
+            img{
+                height: 20px;
+                width: 70px;
+                } 
+        }
+    }
+
+    .envios{ 
+        h5{
+            margin-left:30px;
+            font-size: 20px;
+        }
+        & .medioPago{
+            margin-left: 25px;
+            svg{
+                margin: 10px;
+                height: 20px;
+                width: 20px;
+            }
+            img{
+                height: 20px;
+                width: 70px;
+                } 
+        }
+
+    }
+
+    .boton{ 
+        margin-left: 25px;
+        a{
+            text-decoration: none;
+            color: #000;
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+    
+}

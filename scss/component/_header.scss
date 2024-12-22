@@ -1,0 +1,112 @@
+header{
+    .container-hero{
+        .hero{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            .container-logo{
+                display: flex;
+                svg{
+                    margin-top: 15px;
+                    height: 30px;
+                    width: 30px;
+                }
+                a{
+                    text-decoration: none;
+                }
+                h1{
+                    color: #000;
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    letter-spacing: -1px;
+                    font-family: "Roboto";
+                }
+            }
+            .container-users{
+                display: flex; 
+                gap: 1rem;  
+                align-items: center; 
+                gap: 35px;
+                svg{
+                    &:hover{
+                        height: 30px;
+                        width: 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
+.nav{
+    background-color: #f0e8d5;
+    .open-menu,
+    .close-menu{
+    display: none;
+    }
+    .lista {
+        ul{
+            list-style-type: none;
+        }
+        li {
+            float: left;
+            text-align: center;
+            width: 10em;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color:#000;
+                &:hover{
+                    color: #fcfcfc;
+                    background-color: #b59e67;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    margin: 0;
+                }
+            }
+          }
+            
+    }
+
+
+    .search{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 10px;
+        .buscar{
+            height: 30px;
+            width: 400px;
+            border: 2px solid #8d753e;
+            border-radius: 5px;
+            padding: 5px;
+            padding-right: 40px; 
+            box-sizing: border-box;
+        }
+        .searchButton{
+            position: absolute;
+            right: 0; 
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid #8d753e;
+            background-color: #8d753e;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 0 3px 3px 0;
+            font-size: 20px;
+            cursor: pointer;
+            height: 37px;
+            width: 34px;
+            padding: 0;
+            svg{
+                margin-bottom: 5px;
+            }
+        }
+    }
+    
+
+}

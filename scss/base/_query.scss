@@ -1,0 +1,370 @@
+// pagina principal
+@media screen and (max-width: 780px) {
+    html {
+      font-size: 55%;
+    }
+  
+    .container-logo {
+      svg {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  
+    .hero {
+      padding: 2rem;
+    }
+  
+    .container-users {
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  
+    .open-menu {
+      display: block;
+      border: none;
+      color: black;
+      background-color: #f0e8d5;
+      align-items: flex-start;
+  
+      &:hover {
+        color: #8d753e;
+      }
+    }
+  
+    .navbar {
+      display: none;
+    }
+  
+    .lista {
+      display: none;
+    }
+  
+    .search {
+      margin-left: 100px;
+      height: 20px;
+      width: 60%;
+    }
+   .Categorias{
+        .category-opcion{ 
+            justify-content: center; 
+            margin-left: 0; 
+            .Category-img{
+                align-items: center;
+                margin: 10px;
+                text-align: center;
+                img{
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+     }
+   
+  
+    .productos1 {
+       display: grid;
+       margin: 20px;
+       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+       gap: 1rem;
+       flex-wrap: wrap;
+       margin-left: 20px;
+  
+      .sombras {
+        padding: 20px;
+        margin-left: 15px;
+        height: 150px;
+        width: 150px;
+        padding: 20px;
+        margin-left: 0;
+      }
+    }
+  
+    .caja {
+      height: auto;
+      width: 150px;
+  
+      p {
+        color: #8d753e;
+        font-size: 10px;
+        margin: 20px;
+        font-family: "Roboto";
+      }
+  
+      h4 {
+        font-size: 15px;
+        font-family: "Roboto";
+      }
+  
+      .comprar {
+        height: 35px;
+        width: 150px;
+        font-size: 10px;
+        margin: 10px;
+        margin-left: 50px;
+        text-align: center;
+        background-color: black;
+        color: #ffffff;
+        border: none;
+      }
+
+      // pagina preguntas frecuentes
+      .heading-1{
+        text-align: center;
+        margin: 10px;
+      }
+      .faq{
+        margin: 20px;
+        .conteiner-preguntas {
+            h3{
+              font-size: 20px;
+            }
+            svg{
+              width: 25px;
+              height: 25px; 
+            }
+          }
+      }
+ 
+
+    //   pagina registro
+    
+        .conteiner{
+            margin: 25px;
+            padding: 25px;
+            align-items: flex-start;
+            height: 500px;
+            gap: 15px;
+                .primary,
+                .secondary,
+                .tabs{
+                    font-size: 15px;
+                    padding: 5px 20px;
+                }
+                .form_slide {
+                 left: auto;
+               
+                .form_conteiner{
+                    width: 500px;
+                    max-width: 80vw;
+                    height: 350px;
+                    top: auto;
+                    left: auto;
+                    right: auto;
+                    bottom: 130px;
+                    margin-top: 60px;
+                    transform: translate(-10% , -100%);
+                    .from_box{
+                        max-width: 80vw;
+                        width: 70%;
+                        padding: 0;
+                        align-items: stretch;
+                        margin-left: 0;
+                        padding: 25px;
+                        h2{
+                            display: none;
+                        }
+                        form{
+                            text-align: left;
+                            padding: 25px;
+                            width: 100%;
+                            align-items: stretch;
+                            h3{
+                                font-size: 20px;
+                        
+                        }
+                    }
+                }
+            }
+        }
+    } 
+  }
+}
+
+@media screen and (max-width: 468px){
+    html {
+      font-size: 42.5%;
+    }
+  
+    .container-logo {
+      svg {
+        height: 16px;
+        width: 16px;
+        margin-top: 5px;
+      }
+    }
+  
+    .container-users {
+      svg {
+        height: 20px;
+        width: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  
+    .open-menu {
+      display: block;
+      border: none;
+      color: black;
+      background-color: #f0e8d5;
+      align-items: flex-start;
+  
+      &:hover {
+        color: #8d753e;
+      }
+    }
+  
+    .navbar {
+      display: none;
+    }
+  
+    .lista {
+      display: none;
+    }
+  
+    .search {
+      margin-left: 70%;
+      height: 15px;
+      width: 25px;
+    }
+  
+    .searchButton {
+      height: 30px;
+      width: 20px;
+  
+      svg {
+        height: 10px;
+        width: 10px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .Categorias {
+        .category-opcion {
+          font-size: 10px;
+          .Category-img {
+            height: 100px;
+            width: 100px;
+            align-items: center;
+            text-align: center;
+            img {
+              height: 50px;
+              width: 50px;
+
+            }
+          }
+        }
+      }
+    
+    .productos1 {
+        display: grid;
+        margin: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    
+        .sombras {
+          padding: 20px;
+          margin-left: 15px;
+          height: 150px;
+          width: 150px;
+          margin-left: 0;
+        }
+        .caja {
+            height: auto;
+            width: 150px;
+        
+            h4 {
+              font-size: 10px;
+            }
+        
+            .comprar {
+              height: 35px;
+              width: 100px;
+              font-size: 10px;
+              margin: 10px;
+              margin-left: 25px;
+              text-align: center;
+              background-color: black;
+              color: #ffffff;
+              border: none;
+            }
+          }
+      }
+
+      // faq
+        .faq{
+          margin: 20px;
+          .conteiner-preguntas{
+            h3{
+              font-size: 15px;
+          }
+          svg{
+            width: 15px;
+            height: 15px; 
+           }
+        }
+      }
+
+    // pagina registro
+      .register{
+        width: 100%;
+        .conteiner{
+            padding: 15px;
+            align-items: flex-start;
+            height: 400px;
+            gap: 10px;
+            width: 100%;
+            transform: translate(-55%);
+        }
+        .form_conteiner{
+            width: 270px;
+            max-width: 80vw;
+            height: 350px;
+            top: auto;
+            left: auto;
+            right: auto;
+            bottom: 130px;
+            margin-top: 60px;
+            margin-left: 35px;
+            transform: translate(0 , -50px);
+            .from_box{
+                max-width: 80vw;
+                width: 100px;
+                padding: 0;
+                align-items: stretch;
+                margin-left: 50px; 
+                padding: 25px;
+                
+                h2{
+                    display: none;
+                }
+                form{
+                    text-align: left;
+                    width: 100%;
+                    align-items: stretch;
+                    h3{
+                        font-size: 20px;
+                        width: 100px;
+                    }
+                    input{
+                       width: 150px;
+                    }
+                }
+            }
+        }
+        .primary,
+        .secondary,
+        .tabs{
+            font-size: 15px;
+            padding: 5px 20px;
+        }
+        .form_slide .form_conteiner{
+            left: auto;
+        }
+        
+     } 
+}
