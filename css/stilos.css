@@ -69,67 +69,35 @@ header .container-hero .hero .container-users svg:hover {
   cursor: pointer;
 }
 
-.nav {
+.navbar {
   background-color: #f0e8d5;
-}
-.nav .open-menu,
-.nav .close-menu {
-  display: none;
-}
-.nav .lista ul {
-  list-style-type: none;
-}
-.nav .lista li {
-  float: left;
-  text-align: center;
-  width: 10em;
-  list-style: none;
-}
-.nav .lista li a {
-  text-decoration: none;
   color: #000;
 }
-.nav .lista li a:hover {
-  color: #fcfcfc;
+.navbar a:hover {
+  color: #ece4d7;
   background-color: #b59e67;
   border-radius: 5px;
-  font-size: 15px;
-  margin: 0;
 }
-.nav .search {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 10px;
+.navbar .nav-item a {
+  color: #000;
 }
-.nav .search .buscar {
-  height: 30px;
-  width: 400px;
-  border: 2px solid #8d753e;
-  border-radius: 5px;
-  padding: 5px;
-  padding-right: 40px;
-  box-sizing: border-box;
+.navbar .d-flex input {
+  border: none;
+  height: 40px;
+  width: 500px;
 }
-.nav .search .searchButton {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 1px solid #8d753e;
+.navbar .d-flex button {
   background-color: #8d753e;
   color: #ffffff;
-  text-align: center;
-  border-radius: 0 3px 3px 0;
-  font-size: 20px;
-  cursor: pointer;
-  height: 37px;
-  width: 34px;
-  padding: 0;
+  border: none;
 }
-.nav .search .searchButton svg {
-  margin-bottom: 5px;
+.navbar .d-flex button:hover {
+  background-color: #6d5a2e;
+  color: #ffffff;
+}
+.navbar .d-flex svg {
+  height: 40;
+  width: 40;
 }
 
 main .Categorias {
@@ -279,7 +247,6 @@ main .contact {
 }
 main .contact .contact-sumbit {
   margin-top: 10px;
-  margin-left: 50px;
   height: 600px;
   width: 800px;
 }
@@ -345,7 +312,7 @@ main .contact .contact-information {
 }
 main .contact .contact-information h3 {
   font-size: 25px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 main .contact .contact-information .inf {
   margin-left: 20px;
@@ -674,26 +641,15 @@ footer .boton a:hover {
     height: 20px;
     width: 20px;
   }
-  .open-menu {
-    display: block;
+  .navbar .d-flex input {
     border: none;
-    color: black;
-    background-color: #f0e8d5;
-    align-items: flex-start;
+    height: 30px;
+    width: 400px;
   }
-  .open-menu:hover {
-    color: #8d753e;
-  }
-  .navbar {
-    display: none;
-  }
-  .lista {
-    display: none;
-  }
-  .search {
-    margin-left: 100px;
-    height: 20px;
-    width: 60%;
+  .navbar .d-flex button {
+    background-color: #8d753e;
+    color: #ffffff;
+    border: none;
   }
   .Categorias .category-opcion {
     justify-content: center;
@@ -749,37 +705,37 @@ footer .boton a:hover {
     color: #ffffff;
     border: none;
   }
-  .caja .heading-1 {
+  .heading-1 {
     text-align: center;
     margin: 10px;
   }
-  .caja .faq {
+  .faq {
     margin: 20px;
   }
-  .caja .faq .conteiner-preguntas h3 {
+  .faq .conteiner-preguntas h3 {
     font-size: 20px;
   }
-  .caja .faq .conteiner-preguntas svg {
+  .faq .conteiner-preguntas svg {
     width: 25px;
     height: 25px;
   }
-  .caja .conteiner {
+  .conteiner {
     margin: 25px;
     padding: 25px;
     align-items: flex-start;
     height: 500px;
     gap: 15px;
   }
-  .caja .conteiner .primary,
-  .caja .conteiner .secondary,
-  .caja .conteiner .tabs {
+  .conteiner .primary,
+  .conteiner .secondary,
+  .conteiner .tabs {
     font-size: 15px;
     padding: 5px 20px;
   }
-  .caja .conteiner .form_slide {
+  .conteiner .form_slide {
     left: auto;
   }
-  .caja .conteiner .form_slide .form_conteiner {
+  .conteiner .form_slide .form_conteiner {
     width: 500px;
     max-width: 80vw;
     height: 350px;
@@ -790,7 +746,7 @@ footer .boton a:hover {
     margin-top: 60px;
     transform: translate(-10%, -100%);
   }
-  .caja .conteiner .form_slide .form_conteiner .from_box {
+  .conteiner .form_slide .form_conteiner .from_box {
     max-width: 80vw;
     width: 70%;
     padding: 0;
@@ -798,20 +754,67 @@ footer .boton a:hover {
     margin-left: 0;
     padding: 25px;
   }
-  .caja .conteiner .form_slide .form_conteiner .from_box h2 {
+  .conteiner .form_slide .form_conteiner .from_box h2 {
     display: none;
   }
-  .caja .conteiner .form_slide .form_conteiner .from_box form {
+  .conteiner .form_slide .form_conteiner .from_box form {
     text-align: left;
     padding: 25px;
     width: 100%;
     align-items: stretch;
   }
-  .caja .conteiner .form_slide .form_conteiner .from_box form h3 {
+  .conteiner .form_slide .form_conteiner .from_box form h3 {
     font-size: 20px;
   }
+  .contact {
+    display: block !important;
+  }
+  .contact .contact-sumbit {
+    height: 500px !important;
+    width: 100%;
+  }
+  .contact .contact-sumbit h1 {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .contact .contact-sumbit p {
+    font-size: 20px;
+    width: 100%;
+    margin-right: 100px;
+    display: none;
+  }
+  .contact .contact-sumbit .input-contac {
+    align-items: center;
+    margin-top: 10px;
+    height: 40px;
+    width: 300px;
+    padding: 20px;
+    background-color: transparent;
+  }
+  .contact .contact-sumbit .submit button {
+    display: block;
+    margin-top: 10px;
+    height: 50px;
+    width: 400px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .contact .contact-information {
+    margin-top: 10px;
+    height: 200px;
+    width: 100% !important;
+    border: none;
+    background-color: rgb(42, 41, 41);
+    color: #ffffff;
+    border-radius: 5px;
+  }
 }
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 460px) {
   html {
     font-size: 42.5%;
   }
@@ -820,40 +823,23 @@ footer .boton a:hover {
     width: 16px;
     margin-top: 5px;
   }
+  .container-users {
+    margin-right: 10px;
+  }
   .container-users svg {
     height: 20px;
     width: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
-  .open-menu {
-    display: block;
+  .navbar .d-flex input {
     border: none;
-    color: black;
-    background-color: #f0e8d5;
-    align-items: flex-start;
+    height: 20px;
+    width: 300px;
   }
-  .open-menu:hover {
-    color: #8d753e;
-  }
-  .navbar {
-    display: none;
-  }
-  .lista {
-    display: none;
-  }
-  .search {
-    margin-left: 70%;
-    height: 15px;
-    width: 25px;
-  }
-  .searchButton {
-    height: 30px;
-    width: 20px;
-  }
-  .searchButton svg {
-    height: 10px;
-    width: 10px;
-    margin-bottom: 5px;
+  .navbar .d-flex button {
+    background-color: #8d753e;
+    color: #ffffff;
+    border: none;
   }
   .Categorias .category-opcion {
     font-size: 10px;
@@ -895,7 +881,7 @@ footer .boton a:hover {
     width: 100px;
     font-size: 10px;
     margin: 10px;
-    margin-left: 25px;
+    margin-left: 75px;
     text-align: center;
     background-color: black;
     color: #ffffff;
@@ -965,6 +951,62 @@ footer .boton a:hover {
   }
   .register .form_slide .form_conteiner {
     left: auto;
+  }
+  .contact {
+    display: block;
+  }
+  .contact .contact-sumbit {
+    height: 400px !important;
+    width: 80% !important;
+  }
+  .contact .contact-sumbit h1 {
+    margin-top: 10px !important;
+    font-size: 15px !important;
+    text-align: center !important;
+  }
+  .contact .contact-sumbit p {
+    font-size: 10px;
+    width: 100%;
+    margin-right: 100px;
+    display: none;
+  }
+  .contact .contact-sumbit .input-contac {
+    align-items: center;
+    margin-top: 10px;
+    height: 20px !important;
+    width: 150px !important;
+    padding: 20px !important;
+    background-color: transparent;
+  }
+  .contact .contact-sumbit .submit button {
+    display: block;
+    margin-top: 10px;
+    height: 40px !important;
+    width: 150px !important;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .contact .contact-information {
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+    border: none;
+    background-color: rgb(42, 41, 41);
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  .contact .contact-information h3 {
+    font-size: 25px;
+    margin-left: 40px;
+  }
+  .contact .contact-information .inf {
+    margin-left: 20px;
+    margin-top: 50px;
+    display: flex;
+    gap: 8px;
   }
 }
 

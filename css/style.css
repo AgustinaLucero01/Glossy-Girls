@@ -49,53 +49,43 @@ body{
     cursor: pointer;
 }
 
-.nav{
+.navbar{
     background-color: #f0e8d5;
-}
-.open-menu,
-.close-menu{
-    display: none;
+    color: #000;
 }
 
-.search{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 10px;
+.nav-item a{
+    color: #000;
 }
 
-.buscar{
-    height: 30px;
-    width: 400px;
-    border: 2px solid #8d753e;
+.navbar a:hover{
+    color: #ece4d7;
+    background-color: #b59e67;
     border-radius: 5px;
-    padding: 5px;
-    padding-right: 40px; 
-    box-sizing: border-box;
-    
+}
+.d-flex input{
+    border: none;
+    height: 40px;
+    width: 500px;
 }
 
-.searchButton{
-    position: absolute;
-    right: 0; 
-    top: 50%;
-    transform: translateY(-50%);
-    border: 1px solid #8d753e;
+
+.d-flex button{
     background-color: #8d753e;
     color: #ffffff;
-    text-align: center;
-    border-radius: 0 3px 3px 0;
-    font-size: 20px;
-    cursor: pointer;
-    height: 37px;
-    width: 34px;
-    padding: 0;
+    border: none;
+}
+.d-flex svg
+{
+    height: 40;
+    width: 40;
+}
+.d-flex button:hover{
+    background-color: #6d5a2e;
+    color: #ffffff;
 }
 
-.searchButton svg{
-    margin-bottom: 5px;
-} 
+
 
 .lista ul{
     list-style-type: none;
@@ -343,34 +333,6 @@ footer{
        width: 20px;
     }
     
-    .open-menu{
-        display: block;
-        border: none;
-        color: black;
-        background-color: #f0e8d5;
-        align-items: flex-start;
-    }
-    
-    .open-menu:hover{
-        color: #8d753e;
-    }
-
-
-    .navbar{
-        display: none;
-    }
-    
-    .lista{
-         display: none;
-    }
-        
-    
-    .search{
-       margin-left: 100px;
-       height: 20px;
-       width: 60%;
-    }
-    
     .productos1{
         display: grid;
         margin: 20px;
@@ -472,45 +434,8 @@ footer{
        width: 20px;
        margin-bottom: 10px;
     }
-
-    .open-menu{
-        display: block;
-        border: none;
-        color: black;
-        background-color: #f0e8d5;
-        align-items: flex-start;
-    }
-
-    .open-menu:hover{
-        color: #8d753e;
-    }
-
-    .navbar{
-        display: none;
-    }
-
-    .lista{
-        display: none;
-    }
-    
-
-    .search{
-       margin-left: 70%;
-       height: 15px;
-       width: 25px;
-    }
-
-    .searchButton{
-        height: 30px;
-        width: 20px;
-    }
-
-    .searchButton svg{
-        height: 10px;
-        width: 10px;
-        margin-bottom: 5px;
-    }
-
+   
+  
 
     .productos1{
         display: grid;

@@ -21,32 +21,23 @@
         width: 20px;
       }
     }
-  
-    .open-menu {
-      display: block;
-      border: none;
-      color: black;
-      background-color: #f0e8d5;
-      align-items: flex-start;
-  
-      &:hover {
-        color: #8d753e;
+
+    .navbar{
+      .d-flex {
+       input{
+          border: none;
+          height: 30px;
+          width: 400px;
+        }
+        button{
+          background-color: #8d753e;
+          color: #ffffff;
+          border: none;
       }
     }
-  
-    .navbar {
-      display: none;
+
     }
-  
-    .lista {
-      display: none;
-    }
-  
-    .search {
-      margin-left: 100px;
-      height: 20px;
-      width: 60%;
-    }
+
    .Categorias{
         .category-opcion{ 
             justify-content: center; 
@@ -109,7 +100,7 @@
         color: #ffffff;
         border: none;
       }
-
+    }
       // pagina preguntas frecuentes
       .heading-1{
         text-align: center;
@@ -129,7 +120,7 @@
       }
  
 
-    //   pagina registro
+    // pagina registro
     
         .conteiner{
             margin: 25px;
@@ -180,10 +171,61 @@
             }
         }
     } 
-  }
-}
+    // contacto
+    .contact{
+      display: block !important;
 
-@media screen and (max-width: 468px){
+      .contact-sumbit{
+        height: 500px !important;
+        width: 100%;
+        h1{
+          margin-top: 10px;
+          margin-right: 10px;
+          font-size: 25px;
+          text-align: center;
+        }
+       p{
+        font-size: 20px;
+        width: 100%;
+        margin-right: 100px; 
+        display: none;
+       }
+        .input-contac{
+          align-items: center;
+          margin-top: 10px;
+          height: 40px;
+          width: 300px;
+          padding: 20px;
+          background-color: transparent;
+        }
+        .submit{ 
+            button{
+              display: block;
+              margin-top: 10px;
+              height: 50px;
+              width: 400px;
+              background-color: black;
+              color: #ffffff;
+              border: none;
+              border-radius: 10px;
+              cursor: pointer;
+          }
+        }
+      }
+
+      .contact-information{ 
+        margin-top: 10px;
+        height: 200px;
+        width: 100% !important;
+        border: none;
+        background-color: rgb(42, 41, 41);
+        color: #ffffff;
+        border-radius: 5px;
+      }
+    }
+} 
+
+@media screen and (max-width: 460px){
     html {
       font-size: 42.5%;
     }
@@ -197,48 +239,27 @@
     }
   
     .container-users {
+      margin-right: 10px;
       svg {
         height: 20px;
         width: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
       }
     }
-  
-    .open-menu {
-      display: block;
-      border: none;
-      color: black;
-      background-color: #f0e8d5;
-      align-items: flex-start;
-  
-      &:hover {
-        color: #8d753e;
+    .navbar{
+      .d-flex {
+       input{
+          border: none;
+          height: 20px;
+          width: 300px;
+        }
+        button{
+          background-color: #8d753e;
+          color: #ffffff;
+          border: none;
       }
     }
-  
-    .navbar {
-      display: none;
-    }
-  
-    .lista {
-      display: none;
-    }
-  
-    .search {
-      margin-left: 70%;
-      height: 15px;
-      width: 25px;
-    }
-  
-    .searchButton {
-      height: 30px;
-      width: 20px;
-  
-      svg {
-        height: 10px;
-        width: 10px;
-        margin-bottom: 5px;
-      }
+
     }
 
     .Categorias {
@@ -286,7 +307,7 @@
               width: 100px;
               font-size: 10px;
               margin: 10px;
-              margin-left: 25px;
+              margin-left: 75px;
               text-align: center;
               background-color: black;
               color: #ffffff;
@@ -367,4 +388,63 @@
         }
         
      } 
+    //  contacto
+    .contact{
+      display: block;
+      .contact-sumbit{
+        height: 400px !important;
+        width: 80%!important;
+        h1{
+          margin-top: 10px !important;
+          font-size: 15px !important;
+          text-align: center !important;
+        }
+          p{
+            font-size: 10px;
+            width: 100%;
+            margin-right: 100px; 
+             display: none;
+          }
+          .input-contac{
+            align-items: center;
+            margin-top: 10px;
+            height: 20px !important;
+            width: 150px !important;
+            padding: 20px !important;
+            background-color: transparent;
+        }
+        .submit { 
+            button{
+              display: block;
+              margin-top: 10px;
+              height: 40px !important;
+              width: 150px !important;
+              background-color: black;
+              color: #ffffff;
+              border: none;
+              border-radius: 10px;
+              cursor: pointer;
+            }
+          }
+      }
+      .contact-information{ 
+        margin-top: 10px;
+        height: 300px;
+        width: 100%;
+        border: none;
+        background-color: rgb(42, 41, 41);
+        color: #ffffff;
+        border-radius: 5px;
+        h3{
+          font-size: 25px;
+          margin-left: 40px;
+        }
+        .inf{
+          margin-left: 20px;
+          margin-top: 50px;
+          display: flex;
+          gap: 8px;
+        }
+      }
+    }
 }
