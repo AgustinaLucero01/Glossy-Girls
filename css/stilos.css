@@ -788,16 +788,16 @@ footer .boton a:hover {
   .contact .contact-sumbit .input-contac {
     align-items: center;
     margin-top: 10px;
-    height: 40px;
-    width: 300px;
+    height: 40px !important;
+    width: 300px !important;
     padding: 20px;
     background-color: transparent;
   }
   .contact .contact-sumbit .submit button {
     display: block;
     margin-top: 10px;
-    height: 50px;
-    width: 400px;
+    height: 50px !important;
+    width: 400px !important;
     background-color: black;
     color: #ffffff;
     border: none;
@@ -906,7 +906,7 @@ footer .boton a:hover {
     height: 400px;
     gap: 10px;
     width: 100%;
-    transform: translate(-55%);
+    transform: translate(-49%);
   }
   .register .form_conteiner {
     width: 270px;
@@ -918,7 +918,7 @@ footer .boton a:hover {
     bottom: 130px;
     margin-top: 60px;
     margin-left: 35px;
-    transform: translate(0, -50px);
+    transform: translate(30px, -200px);
   }
   .register .form_conteiner .from_box {
     max-width: 80vw;
@@ -1007,6 +1007,31 @@ footer .boton a:hover {
     margin-top: 50px;
     display: flex;
     gap: 8px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .register {
+    width: 100%;
+  }
+  .register .conteiner {
+    padding: 15px;
+    align-items: flex-start;
+    height: 400px;
+    gap: 10px;
+    width: 100%;
+    transform: translate(-53%);
+  }
+  .register .form_conteiner {
+    width: 270px;
+    max-width: 80vw;
+    height: 350px;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: 130px;
+    margin-top: 60px;
+    margin-left: 35px;
+    transform: translate(10px, -49px);
   }
 }
 

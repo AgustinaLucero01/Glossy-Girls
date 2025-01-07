@@ -193,8 +193,8 @@
         .input-contac{
           align-items: center;
           margin-top: 10px;
-          height: 40px;
-          width: 300px;
+          height: 40px !important;
+          width: 300px !important;
           padding: 20px;
           background-color: transparent;
         }
@@ -202,8 +202,8 @@
             button{
               display: block;
               margin-top: 10px;
-              height: 50px;
-              width: 400px;
+              height: 50px !important;
+              width: 400px !important;
               background-color: black;
               color: #ffffff;
               border: none;
@@ -339,7 +339,7 @@
             height: 400px;
             gap: 10px;
             width: 100%;
-            transform: translate(-55%);
+            transform: translate(-49%);
         }
         .form_conteiner{
             width: 270px;
@@ -351,7 +351,7 @@
             bottom: 130px;
             margin-top: 60px;
             margin-left: 35px;
-            transform: translate(0 , -50px);
+            transform: translate( 30px , -200px);
             .from_box{
                 max-width: 80vw;
                 width: 100px;
@@ -447,4 +447,31 @@
         }
       }
     }
+}
+
+@media screen and (max-width: 360px){
+  .register{
+    width: 100%;
+    .conteiner{
+        padding: 15px;
+        align-items: flex-start;
+        height: 400px;
+        gap: 10px;
+        width: 100%;
+        transform: translate(-53%);
+    }
+    .form_conteiner{
+        width: 270px;
+        max-width: 80vw;
+        height: 350px;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: 130px;
+        margin-top: 60px;
+        margin-left: 35px;
+        transform: translate( 10px , -49px);
+      }
+  
+   }
 }
